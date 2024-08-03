@@ -1,0 +1,38 @@
+ion-tab-bar {
+  position: relative;
+  width: 98%;
+  margin: 5% auto;
+  border-radius: 30px;
+  bottom: 0;
+  border: 1px solid rgba(2, 52, 54, 0.08);
+  height: 80px;
+  --background: var(--ion-color-light);
+}
+
+ion-tab-button {
+  padding: 0;
+  --background: transparent;
+  --color-selected: var(--ion-color-primary);
+  --color: var(--ion-color-dark)
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+ion-label {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 400px) {
+  ion-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  ion-label {
+    font-size: 10px;
+  }
+}

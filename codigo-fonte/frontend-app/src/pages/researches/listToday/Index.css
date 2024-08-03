@@ -1,0 +1,21 @@
+.custom-back-button {
+    --background: white;
+    --color: black;
+    --border: none;
+    --box-shadow: none;
+  }
+  
+  .custom-back-button ion-icon {
+    color: black;
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+  
+  .scrollable-content {
+    margin-top: 56px; /* height of the header */
+  }

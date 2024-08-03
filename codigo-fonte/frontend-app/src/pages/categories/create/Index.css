@@ -1,0 +1,46 @@
+/* MyComponent.css */
+
+.color-option {
+    color: black; /* Texto branco para contraste */
+  }
+  
+  .color-option-100 {
+    color: #1f77b4;
+  }
+  
+  .color-option-101 {
+    color: #ff7f0e;
+  }
+  
+  .color-option-102 {
+    color: #2ca02c;
+  }
+  
+  .color-option-103 {
+    color: #d62728;
+  }
+  
+  .color-option-104 {
+    color: #9467bd;
+  }
+  
+  .color-option-105 {
+    color: #8c564b;
+  }
+  
+  .color-option-106 {
+    color: #e377c2;
+  }
+  
+  .color-option-107 {
+    color: #7f7f7f;
+  }
+  
+  .color-option-108 {
+    color: #bcbd22;
+  }
+  
+  .color-option-109 {
+    color: #17becf;
+  }
+  

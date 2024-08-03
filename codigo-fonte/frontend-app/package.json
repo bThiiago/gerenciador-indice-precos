@@ -1,0 +1,73 @@
+{
+  "name": "frontend-app",
+  "private": true,
+  "version": "2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && cap sync",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "precommit": "yarn format && lint-staged"
+  },
+  "dependencies": {
+    "@capacitor-mlkit/barcode-scanning": "^5.3.0",
+    "@capacitor/android": "^5.5.0",
+    "@capacitor/app": "5.0.6",
+    "@capacitor/browser": "^5.2.1",
+    "@capacitor/core": "^5.5.0",
+    "@capacitor/haptics": "5.0.6",
+    "@capacitor/ios": "^5.5.0",
+    "@capacitor/keyboard": "5.0.6",
+    "@capacitor/status-bar": "5.0.6",
+    "@ionic/react": "^7.0.0",
+    "@ionic/react-router": "^7.0.0",
+    "@testing-library/dom": "^9.3.3",
+    "@types/file-saver": "^2.0.7",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "@unform/core": "^2.1.6",
+    "@unform/web": "^2.1.6",
+    "axios": "^1.6.0",
+    "cordova-plugin-file": "^8.1.0",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "dotenv-expand": "^10.0.0",
+    "file-saver": "^2.0.5",
+    "ionicons": "^7.0.0",
+    "npm": "^10.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
+    "react-router": "^5.3.4",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^6.1.0",
+    "terser": "^5.22.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.5.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-legacy": "^4.0.2",
+    "@vitejs/plugin-react": "^4.0.1",
+    "cypress": "^13.2.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-react": "^7.32.2",
+    "jsdom": "^22.1.0",
+    "lint-staged": "14",
+    "prettier": "^3.0.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.5.2",
+    "vitest": "^0.32.2"
+  },
+  "description": "Projeto Integrador 2 - Frontend",
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write"
+    ]
+  }
+}

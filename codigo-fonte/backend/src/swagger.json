@@ -1,0 +1,77 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "IPJR Documentation",
+    "description": "Esta é uma API para para o sistema Indice de Preços Joia Ribeirinha",
+    "version": "1.0.0",
+    "contact": {
+      "email": "joao.franca@aluno.ifsp.edu.br"
+    }
+  },
+  "paths": {
+    "/api/categories": {
+      "post": {
+        "tags": ["Category"],
+        "summary": "Criar uma categoria",
+        "description": "Criação de uma nova categoria do produto. Cada categoria vai conter um nome e se possui codigo de barras ou não.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "barcode": {
+                    "type": "boolean"
+                  }
+                },
+                "example": {
+                  "name": "Feirinha",
+                  "barcode": false
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Criado com sucesso"
+          },
+          "400": {
+            "description": "Categoria já existe"
+          }
+        }
+      },
+      "get": {
+        "tags": ["Category"],
+        "summary": "Listar as categorias",
+        "description": "Lista todas as categorias",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "barcode": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

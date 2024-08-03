@@ -1,0 +1,6 @@
+.input-label-placement-stacked.sc-ion-input-ios-h
+  .input-wrapper.sc-ion-input-ios,
+.input-label-placement-floating.sc-ion-input-ios-h
+  .input-wrapper.sc-ion-input-ios {
+  margin: 16px;
+}
